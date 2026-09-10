@@ -1,0 +1,27 @@
+PASOS RAPIDOS
+
+1. Entra a https://github.com
+2. Crea un repositorio nuevo llamado BrazoRoboticoBluetooth.
+3. Sube TODOS los archivos y carpetas de este proyecto.
+   IMPORTANTE: también debes subir la carpeta .github/workflows y el archivo build-apk.yml.
+4. Ve a la pestaña Actions.
+5. Selecciona "Compilar APK".
+6. Pulsa "Run workflow".
+7. Espera a que termine con una marca verde.
+8. Abre la ejecución terminada.
+9. Baja hasta "Artifacts".
+10. Descarga "BrazoRoboticoBluetooth-APK".
+11. Dentro encontrarás app-debug.apk.
+12. Pasa app-debug.apk al teléfono e instálalo.
+
+Si GitHub muestra una solicitud para habilitar Actions, acéptala.
+
+El proyecto usa:
+Joystick 1 X -> Servo 1
+Joystick 1 Y -> Servo 2
+Joystick 2 Y -> Servo 3
+Joystick 2 X -> Servo 4
+
+El Arduino debe recibir:
+M,S1,S2,S3,S4
+donde cada valor es -1, 0 o 1.
