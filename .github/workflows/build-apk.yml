@@ -25,14 +25,13 @@ jobs:
 
       - name: Instalar SDK
         run: |
-          yes | sdkmanager --licenses >/dev/null || true
-          sdkmanager "platforms;android-35" "build-tools;35.0.0"
+          yes | sdkmanager --licenses
+          yes | sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
       - name: Eliminar restos de versiones anteriores
         run: |
           rm -rf app/src/main/java/com/brazo
           rm -f app/src/main/res/values/styles.xml
-          echo "Archivos antiguos eliminados"
 
       - name: Preparar Gradle
         run: gradle wrapper --gradle-version 8.10.2
