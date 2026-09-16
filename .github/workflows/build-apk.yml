@@ -22,10 +22,15 @@ jobs:
 
       - name: Configurar Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          accept-android-sdk-licenses: true
+          packages: ''
+
+      - name: Aceptar licencias Android
+        run: yes | sdkmanager --licenses
 
       - name: Instalar SDK
         run: |
-          yes | sdkmanager --licenses
           yes | sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
       - name: Eliminar restos de versiones anteriores
