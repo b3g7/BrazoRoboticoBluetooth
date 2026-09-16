@@ -1,9 +1,0 @@
-<resources>
-    <style name="BrazoTheme" parent="android:style/Theme.Material.Light.NoActionBar">
-        <item name="android:fontFamily">sans</item>
-        <item name="android:colorAccent">#455A64</item>
-        <item name="android:navigationBarColor">#000000</item>
-        <item name="android:statusBarColor">#757575</item>
-        <item name="android:windowLightStatusBar">false</item>
-    </style>
-</resources>
